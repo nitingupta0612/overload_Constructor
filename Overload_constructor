@@ -1,4 +1,5 @@
 #include<iostream>
+#include<conio.h>
 using namespace std;
 class complex
 {
@@ -8,7 +9,7 @@ class complex
 			void get()
 			{
 				cout<<"Enter real and imaginary part of complex number : ";
-				cin>>r>>m;
+				cin>>r>>"+">>m>>"i";
 			}
 			void disp()
 			{

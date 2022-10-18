@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+class complex
+{
+	private:
+		int r,m;
+		public:
+			void get()
+			{
+				cout<<"Enter real and imaginary part of complex number : ";
+				cin>>r>>m;
+			}
+			void disp()
+			{
+				cout<<r<<m;
+			}
+			complex operator + (complex o)
+			{
+				complex s;
+				s.r=r+o.r;
+				s.m=m+o.m;
+				return s;
+			}
+};
+int main()
+{
+	complex p,q,z;
+	p.get();
+	q.get();
+	z=p+q;
+	z.disp();
+	return 0;
+}

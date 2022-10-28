@@ -1,7 +1,8 @@
 #include<iostream>
 #include<conio.h>
+#include<math.h>
 using namespace std;
-class complex
+class Complex
 {
 	private:
 		int r,m;
@@ -15,9 +16,9 @@ class complex
 			{
 				cout<<r<<m;
 			}
-			complex operator + (complex o)
+			Complex operator + (Complex o)
 			{
-				complex s;
+				Complex s;
 				s.r=r+o.r;
 				s.m=m+o.m;
 				return s;
@@ -25,7 +26,7 @@ class complex
 };
 int main()
 {
-	complex p,q,z;
+	Complex p,q,z;
 	p.get();
 	q.get();
 	z=p+q;

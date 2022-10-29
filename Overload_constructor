@@ -26,7 +26,7 @@ class Complex
 };
 int main()
 {
-	Complex p,q,z;
+	Complex p,q,z,r;
 	p.getdata();
 	q.getdata();
 	z=p+q;

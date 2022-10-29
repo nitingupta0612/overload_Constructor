@@ -7,12 +7,12 @@ class Complex
 	private:
 		int r,m;
 		public:
-			void get()
+			void getdata()
 			{
-				cout<<"Enter real and imaginary part of complex number : ";
+				cout<<"Enter real and imaginary part of the complex number : ";
 				cin>>r>>"+">>m>>"i";
 			}
-			void disp()
+			void display()
 			{
 				cout<<r<<m;
 			}
@@ -27,9 +27,9 @@ class Complex
 int main()
 {
 	Complex p,q,z;
-	p.get();
-	q.get();
+	p.getdata();
+	q.getdata();
 	z=p+q;
-	z.disp();
+	z.display();
 	return 0;
 }
